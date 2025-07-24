@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-const DB_PATH = path.resolve(__dirname, "..", "db.json");
+const DB_PATH = path.resolve(__dirname, "db", "db.json");
 
 export function readDB() {
   const raw = fs.readFileSync(DB_PATH, "utf-8");
